@@ -31,7 +31,7 @@ node{
             }
 	    stage("pull image from docker hub"){
                 withCredentials([usernamePassword(credentialsId: 'docker-acc', passwordVariable: 'dockerHubPassword', usernameVariable: 'dockerHubUser')]) {
-                        sh 'sudo docker pull islajd/test'
+                        sh 'sudo docker pull islajd/test:firsttry'
                 }
             }
 	stage("run container"){
