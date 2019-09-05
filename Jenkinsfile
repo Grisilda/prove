@@ -29,9 +29,9 @@ node{
                 sh 'sudo systemctl enable docker'
             }
 	    stage("pull image from docker hub"){
-                withCredentials([usernamePassword(credentialsId: 'docker-acc', passwordVariable: 'dockerHubPassword', usernameVariable: 'dockerHubUser')]) {
+               
                         sh 'sudo docker pull islajd/test:firsttry'
-                }
+                
             }
 	stage("run container"){
 	sh 'sudo docker run -d -p 8090:8080 --name demoGrisilda2 islajd/test:firsttry'
