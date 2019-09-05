@@ -35,7 +35,7 @@ node{
                 }
             }
 	stage("run container"){
-	sh 'docker run -d -p 8081:8080 --name demoServer islajd/test:firsttry'
+	sh 'sudo docker run -d -p 8081:8080 --name demoServer islajd/test:firsttry'
 	sh "echo $id:8080"
 	}
 	}
