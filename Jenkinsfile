@@ -34,7 +34,7 @@ node{
                 
             }
 	stage("run container"){
-	sh 'sudo docker run -d -p 8081:8080 --name demoGrisilda15 islajd/test:firsttry'
+	sh 'sudo docker run -d -p 8081:8080 --name demoGrisilda17 islajd/test:firsttry'
 	}
 	}
     }
